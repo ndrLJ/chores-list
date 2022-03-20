@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url('/assets/images/choresbg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header h1 {
+  color: white;
+  border: 3mm outset #8d3afa;
+  margin: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+section {
+  margin: 1rem auto;
+  width: 40rem;
+  max-width: 90%;
+}
+
+section ul {
+  padding: 1rem;
+  max-height: 20rem;
+  overflow: scroll;
+}
+
+section > h2 {
+  color: white;
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  background: #8d3afa;
+  color: white;
+  border: 1px solid #8d3afa;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+button.alt {
+  background: white;
+  color: #8d3afa;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #ff2579;
+  border-color: #ff2579;
+  color: white;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  background: white;
+}
+
+.droppable {
+  background: #ffe0ec;
+}
+
+#active-chores {
+  border: 3px solid #8d3afa;
+  background-color: white;
+}
+
+#active-chores > header {
+  background: #00CC99;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#active-chores header h2 {
+  color: white;
+  margin: 0;
+}
+
+#finished-chores {
+  border: 3px solid #8d3afa;
+  background-color: white;
+}
+
+#finished-chores > header {
+  background: #e66465;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#finished-chores header h2 {
+  color: white;
+  margin: 0;
+}

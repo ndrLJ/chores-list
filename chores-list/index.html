@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chores List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/app/script.js" defer></script>
+  </head>
+<body>
+  <template id="tooltip">
+    <h2>More Info</h2>
+    <p></p>
+  </template>
+  <header id="header">
+    <h1>&#10003; List of Chores &#10003;</h1>
+  </header>
+  <section id="active-chores">
+    <header>
+      <h2>Active Chores</h2>
+    </header>
+      <ul>
+        <li id="p1" data-extra-info="Optionally, put them in the dishwasher." class="card" draggable="true">
+          <h2>Wash the Dishes</h2>
+          <p>Finish it by 7PM.</p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+        <li id="p2" data-extra-info="Groceries list: bread, milk, cereal, eggs, cold cuts." class="card" draggable="true">
+          <h2>Buy Groceries</h2>
+          <p>Finish it by 4PM. Check nearby supermarkets for discounts.</p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+      </ul>
+  </section>
+  <section id="finished-chores">
+    <header>
+      <h2>Finished Chores</h2>
+    </header>
+      <ul>
+        <li id="p3" data-extra-info="Wipe his paws after." class="card" draggable="true">
+          <h2>Walk Alex</h2>
+          <p>Finish it by 1PM. Make sure he doesn't eat anything off the ground!</p>
+          <button class="alt">More Info</button>
+          <button>Activate</button>
+        </li>
+      </ul>
+  </section>
+</body>
+</html>
